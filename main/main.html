@@ -1,0 +1,7 @@
+<!-- the last item (in this case, 'posts' is the array name that I want to rummage through)
+  Formatting idea is this: 'for each of the 'children (post) of the array ('posts') -->
+<section ng-repeat="post in posts | limitTo: 10">
+<img src="{{post.data.thumbnail}}" alt="your mom!">
+<h4>{{post.data.title}}</h4>
+<p>{{post.data.author}}</p>
+</section>
