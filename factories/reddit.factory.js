@@ -17,7 +17,7 @@ app.factory('RedditFactory', function($http){
           // the word 'result' after 'function' can be substitued for just about any word
           // (with the exception of JavaScript keywords)
           // console.log(result);
-          $scope.posts = result.data.data.children;
+          postData = result.data.data.children;
           return postData;
         });
       };
